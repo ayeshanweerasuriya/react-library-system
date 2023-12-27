@@ -9,25 +9,30 @@
 
 .form {
   background-color: #fff;
-  padding: 30px; /* Increase the padding to increase the height */
-  height: 400px; /* Set a fixed height for the container */
+  padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a card-like appearance */
   text-align: center;
+  width: 300px;
 }
 
 .form h2 {
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
 .form input {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 10px;
   box-sizing: border-box;
+  border-radius: 25px;
+  border: 0;
+  background-color: #ededed;
 }
 
 .form button {
+  margin-top: 20px;
   background-color: #0029ff;
   color: #fff;
   padding: 15px;
@@ -37,7 +42,7 @@
 }
 
 .form button:hover {
-  background-color: #45a049;
+  background-color: #001eb7;
 }
 
 .form text {
@@ -45,4 +50,6 @@
   margin-top: 10px;
   text-decoration: underline;
   cursor: pointer;
+  color: #919191;
+  font-size: small;
 }
