@@ -6,7 +6,7 @@ const Login = () => {
         <h2>Welcome to library management system</h2>
         <input type="text" placeholder="username"></input>
         <input type="text" placeholder="password"></input>
-        <button>LoginIn</button>
+        <button>Login In</button>
         <text>forget your password?</text>
         <text>wanna Sign Up?</text>
       </form>
