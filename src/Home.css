@@ -1,0 +1,9 @@
+.main-container {
+  display: flex;
+  margin: 10px;
+}
+
+.input {
+  display: block;
+  flex-direction: column;
+}
