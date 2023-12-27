@@ -1,15 +1,22 @@
+import { useState } from "react";
 import "./login.css";
+
 const Login = () => {
+  const [login, setLogin] = useState("Login In");
+  const handleClick = () => {
+    setLogin("Welcome");
+  };
+
   return (
     <div className="login">
-      <form className="form">
-        <h2>Welcome to library management system</h2>
-        <input type="text" placeholder="username"></input>
-        <input type="text" placeholder="password"></input>
-        <button>Login In</button>
-        <text>forget your password?</text>
-        <text>wanna Sign Up?</text>
-      </form>
+      <div className="form">
+        <h2>Welcome to the library management system</h2>
+        <input type="text" placeholder="username" />
+        <input type="text" placeholder="password" />
+        <button onClick={handleClick}>{login}</button>
+        <span>Forget your password?</span>
+        <span>Wanna Sign Up?</span>
+      </div>
     </div>
   );
 };
