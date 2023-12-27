@@ -2,9 +2,9 @@ import { useState } from "react";
 import "./login.css";
 
 const Login = () => {
-  const [login, setLogin] = useState("Login In");
+  const [message, setMessage] = useState();
   const handleClick = () => {
-    setLogin("Welcome");
+    setMessage("wrong username or password");
   };
 
   return (
@@ -13,9 +13,10 @@ const Login = () => {
         <h2>Welcome to the library management system</h2>
         <input type="text" placeholder="username" />
         <input type="text" placeholder="password" />
-        <button onClick={handleClick}>{login}</button>
-        <span>Forget your password?</span>
-        <span>Wanna Sign Up?</span>
+        <span className="error">{message}</span>
+        <button onClick={handleClick}>Login</button>
+        <span className="link">Forget your password?</span>
+        <span className="link">Wanna Sign Up?</span>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@
 
 .form h2 {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .form input {
@@ -45,7 +45,14 @@
   background-color: #001eb7;
 }
 
-.form span {
+.error {
+  display: block;
+  margin-top: 10px;
+  color: #ff0000;
+  font-size: small;
+}
+
+.link {
   display: block;
   margin-top: 10px;
   text-decoration: underline;
